@@ -2,6 +2,7 @@
 /* CSS Document */
 body {
   padding-top: 0px;
+  font-family: Verdana, Geneva, sans-serif;
 }
 .starter-template {
   padding: 40px 15px;
@@ -11,6 +12,47 @@ body {
 	background:#101010;
 	min-height:300px;
 }
+.cnt-mensajebienvenida  h1,h2{
+	color:#F0F0F0;
+}
+.enlaces{
+	margin-top:20px;
+}
+.cabecera-enlaces{
+	font-size:24px;
+	font-weight:bold;
+	color:#EFEFEF;
+	text-shadow:3px 3px #333;
+}
+.lista-enlaces{
+	padding-left:5px;
+
+}
+.lista-enlaces li{
+	margin-top:5px;
+}
+.iconos-enlaces{
+	font-size:19px;
+	background:#999;
+	margin-left:-15px;
+	margin-right:5px;
+}
+.icono-mail{color:#FF0;}
+.icono-banco{color:#F6F; background:none;}
+.icono-facebook{color:#000082;font-size:20px !important;background:none; border: 5px 5px 5px 5px;}
+.lista-enlaces a{
+	color:#CCC;
+	background-color:#666;
+	padding:2px;
+	border-radius: 5px 5px 5px 5px;
+	
+}
+.lista-enlaces a:hover{
+	text-decoration:none;
+	background:#FF6;
+	color:#000;
+	font-weight:bold;	
+	}
 .font-ltda{
 	font-size:-3px;
 	

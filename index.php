@@ -6,7 +6,7 @@
     <meta name="description" content="Web de Cosepar Ltda., Arata La Pampa">
     <meta name="author" content="Marcos Careggio">
     <link rel="icon" href="favicon.ico">
-
+	
     <title>COSEPAR Ltda</title>
 
     <!-- Bootstrap core CSS -->
@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="css/carousel.css">
     <!-- barra de navegacion -->
     <link rel="stylesheet" href="css/navbar.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script>
       // Activate CarouselDiapositivas
       $("#myCarousel").carousel({interval: 500});
@@ -68,13 +69,42 @@
   	<div class="carousel-enlaces">
     <div class="container">
         	<div class="row">
-        		<div class="col-sm-6">	
-                <h1>Probando columna 1</h1>
-        		<p> Leyenda columna 1</p>
+        		<div class="col-sm-3">	
+                	<div class="enlaces">
+                    <span class="cabecera-enlaces">Mail</span>
+                        <ul class="list-unstyled lista-enlaces">
+                            <li><span class="iconos-enlaces icono-mail glyphicon glyphicon-envelope"></span><a href="#">Gmail</a>
+                            <li><span class="iconos-enlaces icono-mail glyphicon glyphicon-envelope"></span><a href="#">Hotmail</a>
+                            <li><span class="iconos-enlaces icono-mail glyphicon glyphicon-envelope"></span><a href="#">Yahoo</a> 
+                        </ul>
+                    </div>
+                    
+                    <div class="enlaces">
+                    <span class="cabecera-enlaces">Bancos</span>
+                        <ul class="list-unstyled lista-enlaces">
+                            <li><span class="iconos-enlaces icono-banco glyphicon glyphicon-piggy-bank"></span><a href="#">Banco de La Pampa</a>
+                            <li><span class="iconos-enlaces icono-banco 	glyphicon glyphicon-piggy-bank"></span><a href="#">Banco de la Nacion</a>
+                            <li><span class="iconos-enlaces icono-banco 	glyphicon glyphicon-piggy-bank"></span><a href="#">BBVA</a> 
+                        </ul>
+                    </div>
+                    
+                    <div class="enlaces">
+                    <span class="cabecera-enlaces">Redes</span>
+                        <ul class="list-unstyled lista-enlaces">
+                            <li><span class="iconos-enlaces icono-facebook fa fa-facebook-official"></span><a href="#">Facebook</a>
+                            <li><span class="iconos-enlaces icono-banco 	glyphicon glyphicon-piggy-bank"></span><a href="#">Twitter</a>
+                            <li><span class="iconos-enlaces icono-banco 	glyphicon glyphicon-piggy-bank"></span><a href="#">Youtube</a> 
+                        </ul>
+                    </div>
+                                        
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                 <h1>Probando columna 2</h1>
         		<p> Leyenda columna 2</p>
+                </div>
+                <div class="col-sm-6">
+                	<h3>Noticias</h3>
+                    <p>Noticia Primera Noticias lorem ipsum</p>
                 </div>
         	</div>
         </div>
