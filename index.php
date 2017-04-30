@@ -19,54 +19,54 @@
     <!-- barra de navegacion -->
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
    
 	<script>
-function GetRSS (psUrl,ul)
-{
-	var oHttp=false;
-	/*@cc_on @*/
-	/*@if (@_jscript_version>=5)
-	{
-		var asParsers=['Msxml2.XMLHTTP.5.0', 'Msxml2.XMLHTTP.4.0', 
-		'Msxml2.XMLHTTP.3.0', 'Msxml2.XMLHTTP', 'Microsoft.XMLHTTP'];
-		for (var iCont=0; ((!oHttp) && (iCont<asParsers.length)); iCont++)
-		{
-			try
-			{
-				oHttp=new ActiveXObject(asParsers[iCont]);
-			}
-		    catch(e)
-			{
-				oHttp=false;
-			}
-		}
-	}
-	@end @*/
-	if ((!oHttp) && (typeof XMLHttpRequest!='undefined'))
-	{
-		oHttp=new XMLHttpRequest();
-	}
-	oHttp.open('GET', psUrl, false);
-	oHttp.send(null);
-	sDatos=oHttp.responseText + ' ';
-	iCont=sDatos.indexOf('<item>', 0);
-	for(var i=0;i<10;i++)
-	{
-		sTitulo=sDatos.substring(sDatos.indexOf('<title>', iCont)+19, 
-			sDatos.indexOf('</title>', iCont));
-		sDescripcion=sDatos.substring(sDatos.indexOf('<description>', iCont)+25, 
-			sDatos.indexOf('</description>', iCont));	
-		sLink=sDatos.substring(sDatos.indexOf('<link>', iCont)+6,
-			sDatos.indexOf('</link>', iCont));
-		
-		sTitulo=sTitulo.slice(0,-7);
-		sDescripcion=sDescripcion.slice(0,-7);
-		document.getElementById('noticias').innerHTML+='<li><a href="' + sLink + '" target="_blank">' + sTitulo +" - <p>" +sDescripcion+ '</p></a>';
-		iCont=sDatos.indexOf('<item>', iCont+1);
-	}
-}
+    function GetRSS (psUrl,ul)
+    {
+    	var oHttp=false;
+    	/*@cc_on @*/
+    	/*@if (@_jscript_version>=5)
+    	{
+    		var asParsers=['Msxml2.XMLHTTP.5.0', 'Msxml2.XMLHTTP.4.0', 
+    		'Msxml2.XMLHTTP.3.0', 'Msxml2.XMLHTTP', 'Microsoft.XMLHTTP'];
+    		for (var iCont=0; ((!oHttp) && (iCont<asParsers.length)); iCont++)
+    		{
+    			try
+    			{
+    				oHttp=new ActiveXObject(asParsers[iCont]);
+    			}
+    		    catch(e)
+    			{
+    				oHttp=false;
+    			}
+    		}
+    	}
+    	@end @*/
+    	if ((!oHttp) && (typeof XMLHttpRequest!='undefined'))
+    	{
+    		oHttp=new XMLHttpRequest();
+    	}
+    	oHttp.open('GET', psUrl, false);
+    	oHttp.send(null);
+    	sDatos=oHttp.responseText + ' ';
+    	iCont=sDatos.indexOf('<item>', 0);
+    	for(var i=0;i<10;i++)
+    	{
+    		sTitulo=sDatos.substring(sDatos.indexOf('<title>', iCont)+19, 
+    			sDatos.indexOf('</title>', iCont));
+    		sDescripcion=sDatos.substring(sDatos.indexOf('<description>', iCont)+25, 
+    			sDatos.indexOf('</description>', iCont));	
+    		sLink=sDatos.substring(sDatos.indexOf('<link>', iCont)+6,
+    			sDatos.indexOf('</link>', iCont));
+    		
+    		sTitulo=sTitulo.slice(0,-7);
+    		sDescripcion=sDescripcion.slice(0,-7);
+    		document.getElementById('noticias').innerHTML+='<li><a href="' + sLink + '" target="_blank">' + sTitulo +" - <p>" +sDescripcion+ '</p></a>';
+    		iCont=sDatos.indexOf('<item>', iCont+1);
+    	}
+    }
 
 </script>
   </head>
@@ -93,12 +93,8 @@ function GetRSS (psUrl,ul)
             <li><a href="#contact">Ubicacion</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
-          <!--<ul class="nav navbar-nav navbar-right">
-            <!--<li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-          </ul>-->
-        </div><!--/.nav-collapse -->
+          
+        </div>
       </div>
     </nav>
   
@@ -200,15 +196,6 @@ function GetRSS (psUrl,ul)
   		</div>
    	</div>
 
-  <!-- Left and right controls
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a> -->
 	</div>
     
     
@@ -220,16 +207,15 @@ function GetRSS (psUrl,ul)
     </div>
 
  	<div class="container">
-        	<div class="row">
+    <div class="cnt-servicios">
+        	<h1>Nuestros Servicios</h1>
+          <div class="row">
         		<div class="col-lg-6">	
-                <h1>Probando columna 1</h1>
-        		<p> Leyenda columna 1</p>
-                </div>
-                <div class="col-lg-6">
-                <h1>Probando columna 2</h1>
-        		<p> Leyenda columna 2</p>
-                </div>
+            </div>
+            <div class="col-lg-6">
+            </div>
         	</div>
+     </div>     
     </div>
      
      

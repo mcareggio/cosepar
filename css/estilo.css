@@ -13,7 +13,8 @@ body {
 }
 .cnt-mensajebienvenida{
 	background:#101010;
-	min-height:300px;
+	padding-bottom: 20px;
+	min-height:100%;
 }
 .cnt-mensajebienvenida  h1,h2{
 	color:#F0F0F0;
@@ -76,3 +77,10 @@ body {
 .font-ltda{
 	font-size:-3px;
 }
+.cnt-servicios h1{
+	color: #000;
+}
+@media (max-width : 768px) {
+	.carousel-enlaces{
+		display: none;
+	}
