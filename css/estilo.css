@@ -4,6 +4,9 @@ body {
   padding-top: 0px;
   font-family: Verdana, Geneva, sans-serif;
 }
+.color-rojo{color:#F00;}
+.color-azul{color:#00F;}
+.color-celeste{color:#06F;}
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -38,8 +41,12 @@ body {
 	margin-right:5px;
 }
 .icono-mail{color:#FF0;}
-.icono-banco{color:#F6F; background:none;}
+.icono-banco{background:none;}
 .icono-facebook{color:#000082;font-size:20px !important;background:none; border: 5px 5px 5px 5px;}
+.icono-twitter{color:#06C;font-size:20px !important;background:none;}
+.icono-youtube{color:#F00;font-size:20px !important;background:none;}
+.icono-sol1{color:#FF0;background:none;}
+.icono-sol2{color:#F60;background:none;}
 .lista-enlaces a{
 	color:#CCC;
 	background-color:#666;
@@ -49,12 +56,23 @@ body {
 }
 .lista-enlaces a:hover{
 	text-decoration:none;
-	background:#FF6;
-	color:#000;
+	background:#000;
+	color:#FFF;
 	font-weight:bold;	
+	-webkit-transition-property:all;
+	-webkit-animation-duration:100;
+	font-size:18px;
 	}
+.noticias-rss a:hover > p{
+	display:block;
+}
+.noticias-rss p{
+	display:none;
+	background:#E8E8E8;
+	font-size:12px;
+	margin-top:5px;
+	margin-left:5px;
+}
 .font-ltda{
 	font-size:-3px;
-	
-
-	}
+}
