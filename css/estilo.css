@@ -1,23 +1,47 @@
 @charset "utf-8";
 /* CSS Document */
+
 body {
+ 
   padding-top: 0px;
-  font-family: Verdana, Geneva, sans-serif;
+  /*font-family: Verdana, Geneva, sans-serif;*/
+  font-family:Arial, Helvetica, sans-serif;
+}
+.navbar-brand{
+	font-size:24px;
+	font-weight:bold;
+}
+.img-logo{
+	float:left;
+	
+	margin-top:-18px;
+	height:75px;
+	width:85px;
 }
 .color-rojo{color:#F00;}
 .color-azul{color:#00F;}
 .color-celeste{color:#06F;}
+.color-cosepar{color:#0EA85A;}
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
+.fondo-seccion-negra{
+background:#101010;
+}
 .cnt-mensajebienvenida{
-	background:#101010;
+	
 	padding-bottom: 20px;
-	min-height:100%;
+	min-height:180px;
+	
 }
 .cnt-mensajebienvenida  h1,h2{
 	color:#F0F0F0;
+}
+.img-logo-bienvenida{
+	padding-top:10px;
+	width:150px;
+	height:140px;
 }
 .enlaces{
 	margin-top:20px;
@@ -26,6 +50,7 @@ body {
 	font-size:24px;
 	font-weight:bold;
 	color:#EFEFEF;
+	color:#EEE;
 	text-shadow:3px 3px #333;
 }
 .lista-enlaces{
@@ -49,8 +74,9 @@ body {
 .icono-sol1{color:#FF0;background:none;}
 .icono-sol2{color:#F60;background:none;}
 .lista-enlaces a{
-	color:#CCC;
-	background-color:#666;
+	color:#FFF;
+	background-color:#333;
+	opacity:0.7;
 	padding:2px;
 	border-radius: 5px 5px 5px 5px;
 	
@@ -77,9 +103,131 @@ body {
 .font-ltda{
 	font-size:-3px;
 }
-.cnt-servicios h1{
-	color: #000;
+.cnt-servicios{
+	padding-bottom:60px;
 }
+.cnt-servicios h1{
+	color: #333;
+	padding-top:10px;
+	padding-bottom:70px;
+	font-size:45px;
+	font-weight:700;
+}
+.servicio{
+	position: relative;
+	margin-left:-15px;
+	height: 170px;
+    width: 170px;
+	transition: all 1s ease;
+	transform: perspective(600px);
+	transform-origin: 100% 100%;
+	transform-style: preserve-3d;
+}
+.servicio a{
+	text-decoration:none;
+	color:inherit;
+	
+	
+}
+.servicio:hover {
+	transform: perspective(600px) rotateY(-180deg) translateX(100%);
+	cursor:pointer;
+	
+}
+.serv-cara1 , .serv-cara2{
+	border:2px solid #333;
+	border-radius: 85px;	
+	height:170px;
+	width:170px;
+	font-size:30px;
+	backface-visibility: hidden;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.serv-cara2{
+	background: #333;
+	transform: rotateY(-180deg);
+
+}
+.serv-cara2 .icono-serv, .serv-cara2 .leyenda-serv{
+	color:#FFF;
+}
+.icono-serv{
+	padding-left:45px;
+	padding-top:20px;
+	font-size:70px !important;
+	display:block;
+	
+}
+
+.leyenda-serv{
+	font-size:17px;
+	padding-left:15px;
+	font-weight:700;
+}
+.agua .icono-serv{
+	padding-left:50px;
+}
+.agua .leyenda-serv{
+	padding-left:22px;
+	font-size:18px;
+}
+.tv .leyenda-serv{
+	padding-left:34px;
+	font-size:22px;
+}
+.internet .leyenda-serv{
+	padding-left:42px;
+	font-size:22px;
+}
+.sepelio .icono-serv{
+	padding-top:5px;
+	padding-left:60px;
+	font-size:75px !important;
+}
+.sepelio .leyenda-serv{
+	margin-top:-20px;
+	padding-left:46px;
+	font-size:22px;
+}
+.cnt-energia{
+	padding-top:20px;
+	padding-bottom:40px;
+}
+.cnt-energia h1,.cnt-energia h4{
+	color:#F0F0F0;
+	
+}
+.img-energia{
+	min-width:90%;
+}
+.cnt-agua{
+	padding-top:20px;
+	padding-bottom:40px;
+}
+.cnt-agua h1.,cnt-agua h4{
+	color:#000;
+	
+	
+}
+.img-agua{
+	margin-left:-30px;
+}
+/*
+@media (max-width : 1340px) and (max-width < 1200) {
+	.img-logo{
+	position:absolute;
+	margin-top:-5px;
+	margin-left:-40px;
+	height:30px;
+	width:40px;
+}
+@media (max-width : 1200px) {
+	.img-logo{
+	display:none;
+}
+}*/
 @media (max-width : 768px) {
 	.carousel-enlaces{
 		display: none;
